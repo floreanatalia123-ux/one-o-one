@@ -1,81 +1,60 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ro">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Formular înscriere Afterschool</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background: #f9f9f9;
-      }
-      header {
-        background: #2d89ef;
-        color: white;
-        text-align: center;
-        padding: 20px;
-      }
-      form {
-        max-width: 600px;
-        margin: 30px auto;
-        background: white;
-        padding: 20px;
-        border-radius: 8px;
-        box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
-      }
-      label {
-        font-weight: bold;
-        display: block;
-        margin-top: 15px;
-      }
-      input, textarea, select {
-        width: 100%;
-        padding: 10px;
-        margin-top: 5px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-      }
-      button {
-        margin-top: 20px;
-        background: #2d89ef;
-        color: white;
-        border: none;
-        padding: 12px 20px;
-        border-radius: 5px;
-        font-size: 16px;
-        cursor: pointer;
-      }
-      button:hover {
-        background: #1b5fa7;
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <h1>Formular de înscriere – Afterschool One-O-One</h1>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Înscriere rapidă – One-O-One</title>
+</head>
+<body style="font-family: Arial, sans-serif; background:#f9fafb; margin:0; padding:0;">
 
-    <form action="thankyou.html" method="get">
-      <label for="nume">Nume copil:</label>
-      <input type="text" id="nume" name="nume" required>
+  <header style="text-align:center; background:linear-gradient(135deg,#00c3ff,#ff7eb3); color:white; padding:20px;">
+    <img src="Logo-1.JPG" alt="One-O-One Logo" style="max-height:80px;"><br>
+    <h1>Înscriere rapidă – Program Prelungit</h1>
+    <p>🕛 12:00–17:30 • Din 1 septembrie • 🍎 Gustare inclusă</p>
+  </header>
 
-      <label for="varsta">Vârsta copilului:</label>
-      <input type="number" id="varsta" name="varsta" required>
+  <main style="max-width:600px; margin:20px auto; background:white; padding:20px; border-radius:10px;">
+    <form action="https://formsubmit.co/centruldedezvoltare101@yahoo.com" method="POST">
+      <input type="hidden" name="_next" value="thankyou.html">
+      <input type="hidden" name="_subject" value="Înscriere RAPIDĂ – One-O-One">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_captcha" value="false">
 
-      <label for="parinte">Nume părinte:</label>
-      <input type="text" id="parinte" name="parinte" required>
+      <label>Nume copil *</label>
+      <input type="text" name="Nume copil" required style="width:100%; padding:10px; margin-bottom:10px;">
 
-      <label for="telefon">Telefon:</label>
-      <input type="tel" id="telefon" name="telefon" required>
+      <label>Nume părinte *</label>
+      <input type="text" name="Părinte" required style="width:100%; padding:10px; margin-bottom:10px;">
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
+      <label>Telefon (WhatsApp) *</label>
+      <input type="tel" name="Telefon" required style="width:100%; padding:10px; margin-bottom:10px;">
 
+      <label>Email *</label>
+      <input type="email" name="Email" required style="width:100%; padding:10px; margin-bottom:10px;">
+
+      <label>Data începerii *</label>
+      <input type="date" name="Data începerii" required style="width:100%; padding:10px; margin-bottom:10px;">
+
+      <label>Zile de participare *</label>
+      <select name="Zile" required style="width:100%; padding:10px; margin-bottom:10px;">
+        <option value="Luni–Vineri">Luni–Vineri</option>
+        <option value="3 zile / săptămână">3 zile / săptămână</option>
+        <option value="Altă variantă">Altă variantă</option>
       </select>
 
-      <button type="submit">Trimite înscrierea</button>
+      <label>
+        <input type="checkbox" name="Acord prelucrare date" required>
+        Sunt de acord cu prelucrarea datelor pentru înscriere și comunicare
+      </label><br><br>
+
+      <button type="submit" style="width:100%; padding:12px; background:#00c3ff; color:white; border:none; border-radius:8px; font-weight:bold;">
+        Trimite înscrierea
+      </button>
     </form>
-  </body>
+  </main>
+
+  <footer style="text-align:center; font-size:14px; padding:10px; color:#555;">
+    ☎ 078807302 • One-O-One • Bubuieci
+  </footer>
+</body>
 </html>
