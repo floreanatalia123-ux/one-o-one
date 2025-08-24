@@ -64,3 +64,36 @@
   </footer>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <title>Formular de înscriere</title>
+</head>
+<body>
+  <h2>Înscriere One-O-One</h2>
+
+  <form action="https://formsubmit.co/centruldedezvoltare101@yahoo.com" method="POST">
+
+    <label for="name">Nume:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="phone">Telefon:</label><br>
+    <input type="text" id="phone" name="phone"><br><br>
+
+    <label for="message">Mesaj:</label><br>
+    <textarea id="message" name="message" required></textarea><br><br>
+
+    <!-- Redirect către pagina de mulțumire -->
+    <input type="hidden" name="_next" value="https://formsubmit.co/thank-you.html">
+
+    <!-- Protecție anti-spam -->
+    <input type="hidden" name="_captcha" value="false">
+
+    <button type="submit">Trimite</button>
+  </form>
+</body>
+</html>
